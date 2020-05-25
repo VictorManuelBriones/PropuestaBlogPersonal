@@ -18,7 +18,10 @@ from django.urls import path, include
 from django.conf import settings
 
 urlpatterns = [
+    #rutas core
     path('', include('core.urls')),
+    #rutas servicios
+    path('services/', include('services.urls')),
     path('admin/', admin.site.urls),
 ]
 
